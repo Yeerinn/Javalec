@@ -1,3 +1,8 @@
 이클립스가 느리거나 할때 이클립스 폴더에 eclipse.ini에서 Xms를 변경해준다.
 
 44p 59p 62P 63P(읽기)
+
+github 다시 올리기
+git add .
+git commit -m "수정"
+git push -u origin main
