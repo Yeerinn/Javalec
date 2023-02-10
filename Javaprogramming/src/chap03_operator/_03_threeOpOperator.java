@@ -26,6 +26,7 @@ public class _03_threeOpOperator {
 			System.out.print("정수나 문자를 입력하세요. : ");
 			int num = System.in.read();
 			System.out.println(num);
+			System.out.println((char)num);
 		} catch(Exception e) {
 			//try 구문의 내용을 실행하다가 예외가 발생하면 catch 구문의 코드를 실행
 			
