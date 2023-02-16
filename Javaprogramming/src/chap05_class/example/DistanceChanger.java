@@ -6,8 +6,9 @@ public class DistanceChanger {
 	
 	//변환할 단위(cm, mm, km, inch)	
 	private String unit;
+	
 	//기본 생성자
-	public DistanceChanger(long distance2, String unit2) {}
+	public DistanceChanger() {}
 	//생성자(거리와 단위) => 멤버변수 초기화
 	public DistanceChanger(long distance, String unit) {
 		this.distance = distance;
@@ -15,7 +16,7 @@ public class DistanceChanger {
 	}
 	
 	//선택된 단위로 거리를 변환해서 출력하는 메소드(m -> inch = m*39.37)
-	private void Change() {
+	public void Change() {
 		switch(unit) {
 		case "cm" :
 			System.out.println(unit + "로(으로) 변환된 거리 : " + (distance * 100) + unit);

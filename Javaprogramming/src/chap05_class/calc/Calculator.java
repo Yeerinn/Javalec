@@ -17,14 +17,13 @@ public class Calculator {
 		this.op = op;
 	}
 	
-	//사용자가 입력한 값으로 사칙연산하는 메소드 4개
+	//사용자가 입력한 값(정수1, 정수2)으로 사칙연산하는 메소드 4개
 	public int add() {
 		return num1 + num2;
 	}
 	
 	public int minus() {
-		return num1 - num2;
-		
+		return num1 - num2;		
 	}
 	
 	public long multiple() {
@@ -32,7 +31,7 @@ public class Calculator {
 	}
 	
 	public double divide() {
-		return (double) num1  
+		return (double)num1 / num2;
 	}
 	
 	//사칙연산된 결과를 출력해주는 메소드
@@ -40,22 +39,26 @@ public class Calculator {
 		//결과를 출력해주는 메소드
 		//사용자가 입력한 연산자(op)에 값에 따라서 조건처리
 		switch(op) {
-		//op = "+"면 더한 결과를 출력하기 위해 add메소드 호출
-		case "+" :
-			System.out.println(num1 + " " + op + " " + num2 + " = " + add());
-			break;
+			//op = "+"면 더한 결과를 출력하기 위해 add메소드 호출
+			case "+" :
+				System.out.println(num1 + " " + op + " " 
+										+ num2 + " = " + add());
+				break;
 			//op = "-"면 두 정수를 뺀 결과를 출력하기 위해서 minus메소드 호출
-		case "-" :
-			System.out.println(num1 + " " + op + " " + num2 + " = " + minus());
-			break;
+			case "-" :
+				System.out.println(num1 + " " + op + " "
+										+ num2 + " = " + minus());
+				break;
 			//op = "*"면 두 정수의 곱한 결과를 출력하기 위해 multiple메소드 호출
-		case "*" :
-			System.out.println(num1 + " " + op + " " + num2 + " = " + multiple());
-			break;
+			case "*" :
+				System.out.println(num1 + " " + op + " "
+										+ num2 + " = " + multiple());
+				break;
 			//op = "/"면 두 정수를 나눈 결과를 출력하기 위해 divide메소드 호출
-		case "/" :
-			System.out.println(num1 + " " + op + " " + num2 + " = " + divide());
-			break;
+			case "/" :
+				System.out.println(num1 + " " + op + " " 
+										+ num2 + " = " + divide());
+				break;
 	}
 		
 		}
