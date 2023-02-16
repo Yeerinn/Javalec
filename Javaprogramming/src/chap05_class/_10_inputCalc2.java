@@ -19,6 +19,8 @@ public class _10_inputCalc2 {
 		System.out.print("사칙연산 중 하나 선택(+, -, *, /) : ");
 		String op = sc.next();
 		
+		//Calculator 객체 생성
+		//clac.num1, calc.num2, calc.op는 사용자가 입력한 값으로 초기화(대입)
 		Calculator calc = new Calculator(num1, num2, op);
 		
 		//결과 출력
