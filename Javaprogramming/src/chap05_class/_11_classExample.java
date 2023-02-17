@@ -16,13 +16,15 @@ public class _11_classExample {
 		//q나 Q 입력했을 때(엔터키 포함) 프로그램 종료
 		System.out.print("거리의 단위를 변환합니다.(q, Q 입력 시 종료)");
 		//스캐너로 입력 값 받기
-		num = System.in.read();
-		System.in.skip(2);
-		
-		System.out.println((char)num);
-		
-		if((char)num == 'q' || (char)num == 'Q')
+		//Scanner는 String 값을 받아준다.
+		//String 비교는 equals메소드를 사용한다.
+		//String은 jdk에서 제공하는 기본 클래스를 사용하기 때문에
+		//== 비교할 시 객체의 동일성(주소 값)을 비교한다.
+		//String의 값이 같은지 비교할 때는 equals를 사용한다.	
+		String code = sc.nextLine();
+		if(code.equals("q") || code.equals("Q")) {
 			break;		
+		}
 		
 		System.out.print("변환할 거리를 입력해주세요(정수, m단위) : ");
 		long distance = sc.nextLong();
