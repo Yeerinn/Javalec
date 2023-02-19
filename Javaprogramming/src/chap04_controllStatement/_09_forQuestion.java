@@ -15,8 +15,8 @@ public class _09_forQuestion {
 		int sum = 0;
 		
 		//2. for문으로 1 ~ 사용자가 입력한 정수까지의 합
-		for(int i = 1; i <= num; i++); {
-			sum += 1;
+		for(int i = 1; i <= num; i++) {
+			sum += i;
 		}
 			System.out.println("1~" + num + "까지의 합은 : " + sum);
 		
