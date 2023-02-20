@@ -14,6 +14,8 @@ public class _02_randomExample {
 		Scanner sc = new Scanner(System.in);
 		int userNum = sc.nextInt();
 		
+		//사용자가 입력한 값이 컴퓨터가 생성한 랜덤 값과 같으면 "맞췄습니다." 출력
+		//아니면 "틀렸습니다." 출력
 		if(userNum == randomVal) {
 			System.out.println(randomVal + "입니다. " + userNum);
 			System.out.println("맞췄습니다.");
@@ -22,8 +24,6 @@ public class _02_randomExample {
 			System.out.println("틀렸습니다.");
 		}
 		
-		//사용자가 입력한 값이 컴퓨터가 생성한 랜덤 값과 같으면 "맞췄습니다." 출력
-		//아니면 "틀렸습니다." 출력
 		
 		
 		
