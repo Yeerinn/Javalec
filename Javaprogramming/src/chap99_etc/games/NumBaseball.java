@@ -25,7 +25,7 @@ public class NumBaseball {
 		//2. 랜덤 값 3개 생성(중복되면 다시 생성하도록 처리)
 		//중복처리 방식 : 0번째 인자 값은 검사 X, 1번째 인자 값부터 검사
 		//현재 입력된 인덱스의 값이랑 전에 입력된 모든 값 비교 같은게 나오면  i--, 다시 for문으로 돌아가도록
-		//generateRandom메소드에서 com배여렝 랜덤 값 3개 담아줌
+		//generateRandom메소드에서 com배열에 랜덤 값 3개 담아줌
 		generateRandom();
 		
 		//com 배열 확인
