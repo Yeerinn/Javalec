@@ -2,7 +2,9 @@ package chap99_etc;
 
 import java.util.Scanner;
 
-public class _02_randomExample {
+import chap99_etc.games.GamesClass;
+
+public class _02_randomExample extends GamesClass{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
